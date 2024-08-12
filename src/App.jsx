@@ -15,10 +15,10 @@ function App() {
          <Navbar />
          <Routes>
             {/* public routes */}
-            <Route path="/indradhanush/" element={<Home />} />
-            <Route path="/indradhanush/details" element={<PropertyDetails />} />
-            <Route path="/indradhanush/property/signup" element={<Signup />} />
-            <Route path="/indradhanush/property/login" element={<Login />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/details" element={<PropertyDetails />} />
+            <Route path="/property/signup" element={<Signup />} />
+            <Route path="/property/login" element={<Login />} />
 
             {/* private routes */}
             <Route element={<ProtectedRoutes />}>
