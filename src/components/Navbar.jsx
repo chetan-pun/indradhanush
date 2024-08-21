@@ -4,7 +4,7 @@ const Navbar = () => {
    return (
       <header className="flex w-full items-center justify-center bg-brand-100 px-1 py-4 lg:justify-between lg:px-32">
          <div className="flex items-center">
-            <a href="/indrashanush/property/login">
+            <a href="/property/login">
                <img
                   className="h-14 min-w-14 lg:h-20 lg:min-w-20"
                   src={Icon}
