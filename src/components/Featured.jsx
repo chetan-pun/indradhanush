@@ -16,7 +16,6 @@ const Featured = () => {
                ...doc.data(),
                id: doc.id,
             }));
-
             setProperties(filteredData);
          } catch (err) {
             console.error(err);
