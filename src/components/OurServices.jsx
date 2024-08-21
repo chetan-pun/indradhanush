@@ -12,7 +12,7 @@ const services = [
 
 const OurServices = () => {
    return (
-      <section className="px-4 py-8 pb-20 lg:px-32">
+      <section id = '#services' className="px-4 py-8 pb-20 lg:px-32">
          <h2 className="text-center font-nepali text-h3 font-bold tracking-tight lg:text-h2">
             {' '}
             हाम्रा सेवाहरु{' '}

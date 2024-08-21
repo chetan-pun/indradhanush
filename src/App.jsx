@@ -14,6 +14,7 @@ function App() {
       <div className="App">
          <Navbar />
          <Routes>
+
             {/* public routes */}
             <Route path="/" element={<Home />} />
             <Route path="/details/:userId" element={<PropertyDetails />} />
