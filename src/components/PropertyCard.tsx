@@ -11,6 +11,7 @@ const OurPropertyCard = ({ property, removeDelete = false }: { property: Propert
 
    const [opened, { open, close }] = useDisclosure(false);
    const [isLoading, setIsLoading] = React.useState(false);
+   
 
    const handleDelete = async () => {
       setIsLoading(true);
