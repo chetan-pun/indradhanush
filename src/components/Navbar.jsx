@@ -5,7 +5,7 @@ const Navbar = () => {
    return (
       <header className="flex w-full items-center justify-center bg-brand-100 px-1 py-4 lg:justify-between lg:px-32">
          <div className="flex items-center">
-            <Link to ="/property">
+            <Link to ="/">
                <img
                   className="h-14 min-w-14 lg:h-20 lg:min-w-20"
                   src={Icon}
@@ -37,6 +37,10 @@ const Navbar = () => {
                <li className="text-md font-nepali font-normal tracking-wide cursor-pointe">
                   संस्था जानकारी
                </li>
+               <Link to= '/property' className="text-md font-nepali font-normal tracking-wide cursor-pointe">
+               घर जग्गा
+
+               </Link>
             </ul>
          </nav>
       </header>
