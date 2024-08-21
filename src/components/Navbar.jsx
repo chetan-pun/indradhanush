@@ -1,16 +1,17 @@
+import { Link } from 'react-router-dom';
 import Icon from '/images/brand/icon.png';
 
 const Navbar = () => {
    return (
       <header className="flex w-full items-center justify-center bg-brand-100 px-1 py-4 lg:justify-between lg:px-32">
          <div className="flex items-center">
-            <a href="/property/login">
+            <Link to="/property/login">
                <img
                   className="h-14 min-w-14 lg:h-20 lg:min-w-20"
                   src={Icon}
                   alt="icon"
                />
-            </a>
+            </Link>
             <div className="ml-4 lg:ml-6">
                <h1 className="font-revue text-[18px] tracking-tight text-white lg:text-h4">
                   INDRADHANUSH INVESTMENT PVT. LTD.
