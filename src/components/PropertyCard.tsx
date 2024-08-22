@@ -6,6 +6,7 @@ import { useDisclosure } from '@mantine/hooks';
 import { db } from '../auth/BaseConfig';
 import { deleteDoc, doc } from 'firebase/firestore';
 import { deleteImages, deleteVideo } from '../utils/utils';
+import { Link } from 'react-router-dom';
 
 const OurPropertyCard = ({ property, removeDelete = false }: { property: PropertyExtended, removeDelete?: boolean }) => {
 
@@ -42,9 +43,9 @@ const OurPropertyCard = ({ property, removeDelete = false }: { property: Propert
          </Modal>
 
          <div className="border-2 border-slate-200 rounded-md overflow-hidden">
-            <a href={`/details/${property.id}`}>
+            <Link to={`/details/${property.id}`}>
                <img src={property.images[0]} alt="property image" className="min-h-48 object-cover" />
-            </a>
+            </Link>
             <div className="flex flex-col m-4 gap-4">
                <div className="flex justify-between items-center">
                   <h3 className="font-semibold text-h6">
