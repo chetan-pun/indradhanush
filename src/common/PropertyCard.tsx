@@ -1,16 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { PropertyExtended } from '../types/types';
 
 const PropertyCard = ({ property }: { property: PropertyExtended }) => {
    return (
       <figure className="relative h-96 w-96 flex-shrink-0 snap-start items-center text-white">
-         <a href={`/details/${property.id}`} className="h-full w-full">
+         <Link to={`/details/${property.id}`} className="h-full w-full">
             <img
                className="h-full w-full object-cover"
                src={property.images[0]}
                alt="property"
             />
-         </a>
+         </Link>
          <p className="color-white absolute right-0 top-0 z-10 m-4 rounded-full bg-lime-700 px-3 pb-1 pt-2 ">
             {`रू ${property.priceInNumber.toLocaleString('en-IN')}`}
          </p>
